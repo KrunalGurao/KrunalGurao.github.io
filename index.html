@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/69_YG2leWstfEqXHyW6-2Vyu9TFUNcoqdK-YCxgj624MaFF4ZCPRJSnXnVKns6Hj7w" type="image/x-icon">
+    <title> Krunal A. Gurao | Web Developer</title>
+    
+</head>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 16px 12%;
+    transition: all .50s ease;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+header img{
+    height: 30px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: teal;
+}
+
+
+#nav-menu{
+    display: flex;
+    align-items: center;
+}
+
+#nav-menu a{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0 20px;
+    transition: all .50s ease;
+    color: teal;
+}
+
+#nav-menu a:hover{
+    color: #10151a;  
+}
+
+#nav-menu a.active{
+    color: #10151a;
+}
+
+#menu-icon{
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+.margin-t-b{
+    margin-bottom: 100px;
+    margin-top: 65px;
+}
+.main-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: calc(100vh - 165px);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+    transition: all .5s ease; 
+}
+#home>div:nth-child(1){
+    position: absolute;
+    width: 98.5vw;
+    height: 100vh;
+    z-index: -10;
+    background-color:teal;
+    clip-path: polygon(74% 0%,101% 0%,100% 20%,101% 101%,89% 101%,58% 101%,76% 49%,58% 0%);
+}
+
+.home-social img{
+    width: 60px;
+}
+
+#home{
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+.home-text{
+    width: 100%;
+    margin-left: 30px;
+    margin-top: 80px;
+}
+.home-text>p{
+    font-size: 2.5rem;
+    color: black;
+}
+.home-text>p:nth-child(3){
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.node{
+    position: relative;  
+    z-index: -1000;
+}
+
+#home>img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -100000;
+}
+
+.home-text h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color:teal;
+}
+.resume{
+    margin: 20px 0;
+}
+#resume-button-2{
+    background: linear-gradient(134deg,teal 0%, teal 99%);
+    color: white;
+    padding: 7px 9px;
+    border-radius: 4px;
+    font-size: 20px;
+    margin: 10px 0;
+    display: block;
+    width: 190px;
+}
+
+#resume-link-2{
+    color: white;
+}
+.home-card-main{
+    width: 100%;
+    margin-right: 150px;
+}
+.home-card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color:teal;
+    line-height: 1.8rem;
+    background-color: white;
+    z-index: 100;
+    padding: 40px 25px;
+    border-radius: 10px;
+    margin: 0 40px;
+    margin-top: 100px;
+}
+
+.home-social a{
+    margin: 0 15px;
+    size: 50px;
+}
+
+#about{
+    background-color: teal;
+    width: 100%;
+    clip-path: polygon(0 0,100% 0% ,100% 90%, 80% 80%, 0% 90% );
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid white;
+}
+
+#about>div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;    
+}
+#about img{
+    border-radius: 20px;
+    width: 28vw;
+}
+.home-card-main>div>img{
+    border-radius: 50%;
+    margin-left: 150px;
+}
+
+#about>div:nth-child(2){
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px ;
+    color: white;
+}
+#about>div:nth-child(2)>h1{
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+#about>div:nth-child(2)>p{
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    padding: 0 40px;
+
+}
+#about>div:nth-child(2)>a{
+    padding: 10px 15px;
+    color: black;
+    border-radius: 5px;
+    background: linear-gradient(134deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 99%);
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+}
+#about>div:nth-child(2)>a:hover{
+    color: #ffffff;
+    background: teal;
+    border: solid white 3px;
+}
+
+.skills-card{
+    margin-bottom: 20vh;
+}
+#skills-sec, #projects-sec, #contact-sec{
+    height: 12vh;
+}
+
+#skills>h1{
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(36, 36, 36);
+    margin-bottom: 30px;
+}
+
+#tech {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 60px 40px;
+}
+
+#tech>div {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+#tech>div>img {
+    width: 50px;
+    height: 50px;
+}
+
+.github>h1{
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(36, 36, 36);
+    margin-bottom: 30px;
+}
+.github>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.calendar{
+    width:80%;
+    background-color: #10151a;
+    padding: 40px;
+    border-radius:10px ;
+    color:#ECE9E6
+}
+.github>div>div{
+    margin: 10px auto;
+}
+.github>div>div>img{
+    margin: 10px;
+}
+
+
+
+/* ******************************************************************************************************* */
+
+
+
+#projects{
+    height: auto;
+    margin-bottom: 100px;
+}
+#projects>h1{
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(36, 36, 36);
+    margin-bottom: 50px;
+}
+
+.all-projects{
+    width: 80%;
+    margin: auto;
+}
+
+.project-card{
+    height: auto;
+    background-color: teal;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+.project-card>div:nth-child(1){
+    
+    width: 60%;
+    
+}
+.project-card>div:nth-child(1)>img{
+    border: 1px solid white;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.project-card>div:nth-child(2){
+    
+    width: 40%;
+    text-align: center;
+    margin: 0px 20px;
+    width: 38%;
+    padding: 0 20px;
+}
+.project-card>div:nth-child(2)>h1,.project-card>div:nth-child(2)>p,.project-card>div:nth-child(2)>h5,.project-card>div:nth-child(2)>a{
+    margin: 15px 0;
+    font-size: 1.1rem;
+    color: white;
+}
+.project-card>div:nth-child(2)>div{
+    margin-top: 55px;
+}
+.project-card>div:nth-child(2) a{
+    padding: 8px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: #10151a;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.project-card>div:nth-child(2) a:hover{
+    color: #ffffff;
+    background: teal;
+    border: white solid 3px;
+}
+
+
+.project-card>div:nth-child(2)>h1{
+    font-size: 28px;
+}
+
+
+/* ********************************************************************************************************* */
+
+
+.contact-section {
+    padding: 120px 0px;
+}
+
+.contact-section>div {
+    height: 400px;
+    width: 40%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+    border-radius: 5px;
+    background-color: teal;
+}
+
+.contact-link {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.contact-link>div {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.contact-link>p {
+    width: 50%;
+    font-size: 22px;
+    color: #ffffff;
+    
+    margin: 20px auto;
+}
+
+.contact-link>div>a {
+    
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #ffffff;
+}
+
+.contact-link img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.contact-form {
+    width: 50%;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    color: #ffffff;
+    margin: auto;
+}
+
+.contact-form>form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form>form>input[type="text"],
+.contact-form>form>input[type="email"] {
+    height: 40px;
+    width: 65%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: auto;
+ 
+}
+
+.contact-form>form>input[type="text"]:focus,
+.contact-form>form>input[type="email"]:focus {
+    outline: none;
+}
+
+.contact-form>form>textarea {
+    min-height: 100px;
+    max-width: 65%;
+    min-width: 65%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.contact-form>form>textarea:focus {
+    outline: none;
+}
+
+.contact-form>form>button {
+    margin: auto;
+    height: 40px;
+    width: 40%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #ebf1f5;
+    color: #616161;
+}
+
+.contact-form>form>button:hover {
+    background-color: #667C89;
+    color: #ffffff;
+}
+.section-title{
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(36, 36, 36);
+    margin-bottom: 30px;
+}
+
+
+/* ****************************************************************************************************** */
+
+
+#github-sec{
+    height: auto;
+}
+
+.github>h1{
+    text-align: center;
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 30px;
+}
+.github>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.calendar{
+    width:80%;
+    background-color: teal;
+    color:white
+}
+.github>div>div{
+    margin: 10px auto;
+}
+.github>div>div>img{
+    margin: 10px;
+}
+
+
+
+/* **********************************************(Media Query)***************************************** */
+
+
+
+
+@media all and (min-width:320px) and (max-width:800px){
+    #contact{
+        margin-bottom:40px;
+       
+    }
+    #contact > h1 {
+        margin-top: 20px;
+    }
+    #contact > h1 , #contact>p{
+        text-align: center;
+    }
+    
+    #contact>div{
+        width:90%;
+        background-color: teal;
+        margin:40px auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        justify-content: space-evenly;
+    }
+    
+    .personal-info{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .personal-info>div{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 50px 0;
+        width:90%;
+        border-radius: 10px;
+        height:100%;
+        margin:30px auto;
+        background-color: white;
+    }
+    .personal-info>div>div{
+        margin:25px 30px;
+    }
+    .personal-info>div>div>p{
+        margin: 5px 10px;
+        font-size: 12px;
+    }
+    
+    .info-head{
+        display: flex;
+        font-size: 12px;
+        align-items: center;
+        margin: 5px 10px;
+        color:teal;
+    }
+    .info-head>i{
+        margin-right: 8px;
+        font-size: 12px;
+    }
+   
+    .send-info{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .send-info>div{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        background-color:white;
+        border-radius: 10px;
+        width:50%;
+        margin:20px auto;
+        height: 100%;
+    
+    }
+    .input-box{
+        border-radius:20px ;
+        background-color: #273036;
+        margin: 15px 20px;
+    }
+    .input-box:first-child{
+        margin-top:20px;
+    }
+    
+    .input-box>p{
+        padding: 10px 15px 0px;
+        font-size: 14px;
+        color: teal;
+    }
+    .input-box>input ,.input-box>textarea {
+        background-color: #273036;
+        border: none;
+        resize: none;
+        border-radius:20px ;
+        font-size: 14px;
+        padding:0px 15px 10px;
+        color:white;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .input-box>input:focus , .input-box>textarea:focus{
+        outline: none;
+    }
+    .submit-btn {
+        margin: 15px 20px 20px;
+    }
+    .submit-btn > button{
+        font-size: 12px;
+        padding: 6px 10px;
+        background-color: teal;
+        border: 2px solid teal;
+        color:white;
+        border-radius: 8px;
+        cursor: pointer;
+        user-select: none;
+    }
+    .submit-btn > button:hover{
+       
+        background-color: white;
+        border: 2px solid teal;
+        color:teal;
+    }
+}
+
+@media (max-width: 425px) {
+    
+    .home-social{
+        background-color: white;
+        padding-top: 10px;
+        border-radius: 5px;
+        display: flex;
+        justify-content:left;
+        
+    }
+
+    #home>img{
+        width: 1000px;
+        right: 0;
+    }
+
+    .home-text h1{
+        font-size: 1.5rem;
+        
+    }
+    .home-text>p{
+        font-size: 1rem;
+
+    }
+    #home>div:nth-child(1){
+        display: none;
+    }
+    #home{
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .node::before{
+        width: auto;
+        height: auto;
+        animation: none;
+    }
+    #about{
+        flex-direction: column;
+        height: auto;
+        clip-path: none;
+
+    }
+    #about>div:nth-child(1){
+        width: auto;
+        margin-top: 50px;
+    }
+    #about>div:nth-child(2){
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    #about img{
+        width: 50vw;
+    }
+
+    #tech {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    #contact>div{
+        flex-direction: column;
+    }
+    .personal-info{
+        width: 100%;
+    }
+    .send-info>div{
+        width: 90%;
+    }
+
+    .calendar{
+        width: 100vw;
+    }
+    .github>div>div img{
+        width: 100%;
+    }
+    footer>div:nth-child(2){
+        font-size: 14px;
+    }
+
+    .project-card{
+        flex-direction: column;
+    }
+
+    .project-card>div:nth-child(1){
+        width: 100%;
+
+    }
+    .project-card>div:nth-child(2){
+        width: 100%;
+
+    }
+    .project-card>div:nth-child(2) a{
+        display: block;
+        margin-top: 5px;
+    }
+
+}
+
+@media (max-width: 1280px) {
+
+    header{
+        padding: 16px 2%;
+        transition: .2s;
+        display: flex;
+        justify-content: space-around;
+    }
+    .all-projects{
+        width: 95%;
+    }
+
+    .project-card{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .project-card>div:nth-child(1){
+        width: 100%;
+
+    }
+    .project-card>div:nth-child(2){
+        width: 100%;
+        margin: 0px;
+        font-size: 14px;
+
+
+    }
+    .project-card>div:nth-child(2) a{
+        width: 50%;
+        margin: auto;
+        margin-top: 5px;
+    }
+
+}
+
+@media (max-width: 724px){
+
+    #menu-icon{
+        display: block;
+    }
+
+    #nav-menu{
+        position: absolute;
+        top: 0;
+        margin-top: 60px;
+        display: none;
+        width: 50%;
+        background: rgb(255, 255, 255);
+        height: auto;
+        transition: all .50s ease;
+    }
+    
+    #nav-menu a{
+        display: block;
+        margin: 8px 0;
+        padding: 0 25px;
+        transition: all 1 ease;
+    }
+    #nav-menu a.active{
+        color: rgb(63, 63, 63); 
+    }
+
+    #nav-menu a:hover{
+    color: rgb(63, 63, 63);
+    transform: translateY(2px);
+    }
+
+    #nav-menu a.active{
+        color: rgb(10, 10, 10);    
+    }
+
+    #nav-menu.open{
+    width: 100%;
+    top: 70;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    }
+
+    .main-body{
+        flex-direction: column;
+    }
+    .all-projects{
+        width: 95%;
+    }
+
+    .project-card{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .project-card>div:nth-child(1){
+        width: 100%;
+
+    }
+    .project-card>div:nth-child(2){
+        width: 100%;
+        margin: 0px;
+        font-size: 14px;
+
+
+    }
+    .project-card>div:nth-child(2) a{
+        width: 50%;
+        margin: auto;
+        margin-top: 5px;
+    }
+}
+</style>
+<body>
+
+
+  <header>
+    <a href="#" class="logo"><h2>Krunal <span style="color: black;">Arun Kumar Gurao</span></h2></a>
+
+    <ul id="nav-menu" class="navbar">
+      <li><a href="#" class="active nav-link home">Home</a></li>
+      <li><a href="#about" class="nav-link about section">About</a></li>
+      <li><a href="#skills-sec" class="nav-link skills">Skills</a></li>
+      <li><a href="#projects-sec" class="nav-link projects">Projects</a></li>
+      <li><a href="#contact" class="nav-link contact">Contact</a></li>
+      <li> <button onclick="resume()" style="border:none; background-color: white;" id="resume-button-1" >
+        <a href="/Krunal_Arun_Kumar_Gurao_Resume.pdf" target="_blank" class="nav-link resume" id="resume-link-1" download>Resume</a>
+      </button>
+      </li>
+    </ul>
+    <a href="#" class="logo bx bx-menu" id="menu-icon"><span class="material-symbols-outlined">menu</span></a>
+  </header>
+
+
+<!-- ******************************************************************************************************* -->
+
+
+  <div class="main-container">
+    <section id="home" class="margin-t-b main-body">
+      <div></div>
+      <div id="user-detail-name" class="home-text">
+        <p>Hello, I’m</p>
+        <h1>Krunal Arun Kumar Gurao</h1>
+        <p class="node">FULL STACK WEB DEVELOPER 🤖</p>
+        <div class="home-links">
+          <div class="resume" >
+            <button onclick="resume()" style="border: none;" id="resume-button-2" >
+              <a id="resume-link-2"  href="/Krunal_Arun_Kumar_Gurao_Resume.pdf" target="_blank" class="trigger" download>Download Resume</a>
+            </button>
+          </div>
+          <div class="home-social">
+            <a href="https://github.com/KrunalGurao" id="contact-github" target="_blank">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo5wJDTSaug_z6R_9N2yw9GekcRrkD3A438B8pbDW_PQEzix-SxT16LqvR7unzD4EOwfw&usqp=CAU" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/KrunalGurao" id="contact-linkedin" target="_blank">
+              <img src="https://icons-for-free.com/download-icon-linked+linkedin+social+icon-1320191444164630362_0.svg" alt="">
+            </a>
+          </div>
+        
+        </div>
+  
+      </div>
+  
+    </section>
+
+
+<!-- ***************************************************************************************************** -->
+
+
+    <section id="about" class="about section">
+        <div><img src="/Krunal.jpg" class="home-img" alt="Krunal">
+        </div>
+        <div>
+          <h1>About Me</h1>
+          <p id="user-detail-intro">An aspiring Full Stack Web Developer with knowledge of 🌐HTML, ✨CSS, ⚙️JavaScript, and Passionate about staying current with the latest web development technologies and constantly enhancing my skills.</p>
+          <a href="#contact">Contact Me</a>
+        </div>
+      </section>
+
+
+
+<!-- **************************************************************************************************** -->
+
+
+
+      <section id="skills-sec">
+    </section>
+    
+    <section id="skills">
+      <h1>Technical Skills</h1>
+      <div class="skills-card">
+        <div class="container grid" id="tech">
+        <div> 
+          <img class="skills-card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png" alt="HTML"><p class="skills-card-name">HTML</p>
+        </div>
+        <div>
+          <img class="skills-card-img" src="https://camo.githubusercontent.com/edc736634dd35b0f4008e2f7db456136b9fc0e1e7a4078bb72c7352b1bdf8a7e/68747470733a2f2f776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f6373732d332e737667">CSS</p>
+        </div>
+        <div>
+          <img class="skills-card-img" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript"><p class="skills-card-name">JavaScript</p>
+        </div>
+        
+        <div>
+          <img class="skills-card-img" src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png" alt="Node.js"><p class="skills-card-name">Node.js</p>
+        </div>
+        <div>
+          <img class="skills-card-img" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png" alt="Express.js"><p class="skills-card-name">Express.js</p>
+        </div>
+        <div>
+          <img class="skills-card-img" src="https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Emblem.jpg" alt="MongoDB"><p class="skills-card-name">MongoDB</p>
+        </div>
+        <div>
+            <img class="skills-card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Socket-io.svg/1024px-Socket-io.svg.png" alt="Socket.io"><p class="skills-card-name">Socket.io</p>
+          </div>
+        <div>
+          <img class="skills-card-img" src="data:image/png;base64,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" alt="C"><p class="skills-card-name">C</p>
+        </div>
+       <div>
+          <img class="skills-card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" alt="C++"><p class="skills-card-name">C++</p>
+        </div>
+        <div>
+          <img class="skills-card-img" src="https://cdn-icons-png.flaticon.com/512/2306/2306173.png" alt="SQL"><p class="skills-card-name">SQL</p>
+        </div>
+        <div>
+          <img class="skills-card-img" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub"><p class="skills-card-name">GitHub</p>
+        </div>
+        <div> 
+          <img class="skills-card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="VS Code"><p class="skills-card-name">VS Code</p>
+        </div>
+        <div> 
+            <img class="skills-card-img" src="https://ph-files.imgix.net/3f458a19-f754-4e09-8aa5-351c3a45dc38.png?auto=format" alt="Thunder Client"><p class="skills-card-name">Thunder Client</p>
+          </div>
+      </div>
+    </section>
+
+
+
+<!-- ******************************************************************************************************* -->
+
+
+
+    <section id="projects-sec">
+    </section>
+    <section id="projects">
+      <h1>Projects</h1>
+      <div class="all-projects">
+        <div class="project-card">
+          <div>
+            <img src="/Reliance Digital.PNG" alt="">
+          </div>
+          <div>
+            <h1 class="project-title" >Clone of Reliance Digital <br>(D-Cart)</h1>
+            <p class="project-description">Reliance Digital is an ecommerce digital platform.</p>
+            <h5  class="project-tech-stack" >Features: Sign-up/Sign-in | all types of Digital Product | add
+                to cart | checkout.</h5>
+            <h5  class="project-tech-stack" >Tech Stack: HTML | CSS | JavaScript</h5>
+            <p>Completed an individual project within a span of five days.</p>
+            <div>
+              <a href="https://silver-jelly-0a605e.netlify.app/login.html" target="_blank" class="project-deployed-link">Live &nbsp;<i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
+              <a href="https://github.com/KrunalGurao/Clone-of-Reliance-Digital/tree/main/Main" target="_blank" class="project-github-link" >Code &nbsp;<i
+                class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+       </div>
+        <div class="project-card">
+          <div>
+            <img src="/Belk.PNG" alt="">
+          </div>
+          <div>
+            <h1 class="project-title" >Clone of Belk.com <br>(FlexKart)</h1>
+            <p class="project-description">Belk, Inc. is an American department store chain</p>
+            <h5  class="project-tech-stack" >Features: Sign-up/Sign-in | all types of Digital Product | add
+                to cart | checkout.</h5>
+            <h5  class="project-tech-stack" >Tech Stack: HTML | CSS | JavaScript</h5>
+            <p>Completed a group project within a span of five days.</p>
+            <div>
+              <a href="https://friendly-biscuit-ca3540.netlify.app/login.html" target="_blank" class="project-deployed-link">Live &nbsp;<i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
+              <a href="https://github.com/KrunalGurao/Clone-of-Belk.com" target="_blank" class="project-github-link" >Code &nbsp;<i
+                class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+       </div>
+       <div class="project-card">
+        <div>
+          <img src="/Rentomojo.PNG" alt="">
+        </div>
+        <div>
+          <h1 class="project-title" >Clone of Rentomojo <br>(Rental Mania)</h1>
+          <p class="project-description">RentoMojo is an online rental platform that provides furniture,
+              appliances, electronics etc. on a monthly rental basis.</p>
+          <h5  class="project-tech-stack" >Features:
+
+            Sign-up/Sign-in | all types of home packages | User
+              authentication | add to cart | checkout.</h5>
+          <h5  class="project-tech-stack" >Tech Stack: HTML | CSS | JavaScript</h5>
+          <p>Completed an individual project within a span of five days.</p>
+          <div>
+            <a href="https://dashing-treacle-f79e15.netlify.app/login.html" target="_blank" class="project-deployed-link">Live &nbsp;<i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
+            <a href="https://github.com/KrunalGurao/Clone-of-RentoMojo/tree/main/Rentomojo" target="_blank" class="project-github-link" >Code &nbsp;<i
+              class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+     </div>
+     <div class="project-card">
+        <div>
+          <img src="/Vartalap.png" alt="">
+        </div>
+        <div>
+          <h1 class="project-title" >Vartalap</h1>
+          <p class="project-description">Vartalap: Web application for message exchange with users.</p>
+          <h5  class="project-tech-stack" >Features: Sign-up/Sign-in | Private chat | Group chat | Admin feature.</h5>
+          <h5  class="project-tech-stack" >Tech Stack: HTML | CSS | JavaScript | Mongoose.js | Express.js | Node.js | Socket.io | MongoDB</h5>
+          <p>Completed a group project within a span of five days.</p>
+          <div>
+            <a href="https://soft-alpaca-263d2d.netlify.app/frontend/user/signup" target="_blank" class="project-deployed-link">Live &nbsp;<i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
+            <a href="https://github.com/KrunalGurao/harsh-sand-4950" target="_blank" class="project-github-link" >Code &nbsp;<i
+              class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+     </div>
+      
+    </section>
+
+
+
+    <!-- ***************************************************************************************************** -->
+
+
+
+    <section id="github-sec">
+        <div class="github react-activity-calendar">
+          <h1>GitHub Statistics</h1>
+          <div>
+              <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+              <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+              <div class="calendar react-activity-calenda">
+              </div>
+              <div>
+                <a href="https://github.com/KrunalGurao" target="_blank"><img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=KrunalGurao&show_icons=true&theme=gotham"></a>
+                  
+                <a href="https://github.com/KrunalGurao" target="_blank"><img  id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=KrunalGurao&theme=gotham&hide_border=false"></a>
+              </div>
+              <div>
+                <a href="https://github.com/KrunalGurao" target="_blank"><img id="github-top-langs"src="https://github-readme-stats.vercel.app/api/top-langs/?username=KrunalGurao&layout=compact&theme=gotham"></a>
+              </div>      
+          </div>
+         </div>
+      </section>
+
+
+
+<!-- *************************************************************************************************** -->
+
+
+
+     <section id="contact" class="contact-section tag">
+      <h2 class="section-title">Contact</h2>
+      <div>
+             <div id="contact-link" class="contact-link">
+                  
+                    <div>
+                           <a target="_blank" id="contact-github"
+                                  href="https://github.com/KrunalGurao"><img
+                                         src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                                         alt=""><span>Github</span></a>
+                           <a target="_blank" id="contact-linkedin"
+                                  href="https://www.linkedin.com/in/KrunalGurao"><img
+                                         src="https://www.iconpacks.net/icons/1/free-linkedin-icon-112-thumb.png"
+                                         alt=""><span>LinkedIn</span></a>
+                           <a target="_blank" id="contact-phone" href="tel:+918983937574"><img
+                                         src="https://cdn-icons-png.flaticon.com/512/220/220802.png" alt=""><span>+91
+                                         8983937574</span></a>
+                            <a target="_blank" id="contact-phone" href="tel:+919588641329"><img
+                                            src="https://static.vecteezy.com/system/resources/previews/010/829/986/original/phone-icon-in-trendy-flat-style-free-png.png" alt=""><span>+91
+                                            9588641329</span></a>
+                           <a target="_blank" id="contact-email"
+                                  href="mailto:krunalgurao1@gmail.com"><img
+                                         src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-email-512.png"
+                                         alt=""><span>krunalgurao1@gmail.com</span></a>
+                    </div>
+             </div>
+      </div>
+</section>
+
+<script>
+
+
+let menu=document.getElementById("menu-icon");
+let navbar=document.querySelector(".navbar");
+let m=document.querySelector(".main-body")
+let count=0;
+menu.addEventListener('click',()=>{
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('open');
+    
+    m.style.marginTop="200px";
+    count++;
+    if(count%2==0){
+        m.style.marginTop="0px";
+
+    }
+
+    if(m.classList.contains("m-t")){
+        m.classList.remove("m-t");
+    }
+    else{
+        m.classList.add("m-t");
+    }
+});
+
+
+GitHubCalendar(".calendar", "KrunalGurao");
+GitHubCalendar(".calendar", "KrunalGurao", { responsive: true });
+
+
+function resume(){
+    window.open("https://drive.google.com/file/d/1wZ0iTA-zl_4-bn_NZv5dK4cMWTl9bONX/view?usp=share_link")
+}
+
+
+</script>
